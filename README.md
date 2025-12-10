@@ -12,7 +12,7 @@
 
 [2. Software](software)  
 - [2.1 Configuration du clavier](#21-configuration-du-clavier)  
-- [2.2 Canadien - CSA (Alt)](#22-canadien---csa-alt)  
+- [2.2 Canadien - Alt](#22-canadien---alt)  
 - [2.3 Mapping des touches](#23-mapping-des-touches)  
 
 [Conclusion](conclusion)
@@ -70,16 +70,16 @@ Configurer chaque OS avec les modèles de clavier suivants :
 | OS  | Clavier |
 | ------------- | ------------- |
 | Windows | Canadien multilingue standard  |
-| MacOS | Canadien - CSA (Alt) |
+| MacOS | Canadien - Alt |
 | Linux | Canadien Intl. |
 
-## 2.2 Canadien - CSA (Alt)
+## 2.2 Canadien - Alt
 
-Tel qu'expliqué ci-haut, sur Mac, la touche à gauche du 1 donne `ù Ù`. Elle n’existe pas sur Windows et Linux, qui utilisent plutôt `/ \ |`. Je l’ai donc réaffectée à `/ \ |` via un profil alternatif appelé `Canadien - CSA (Alt)` fourni dans le repo.
+Tel qu'expliqué ci-haut, sur Mac, la touche à gauche du 1 donne `ù Ù`. Elle n’existe pas sur Windows et Linux, qui utilisent plutôt `/ \ |`. Je l’ai donc réaffectée à `/ \ |` via un profil alternatif appelé `Canadien - Alt` fourni dans le repo.
 
 > Note: Igorez cette étape si vous désirez conserver la touche `ù Ù` sur Mac même si elle diffèrera de la touche Windows et Linux.
 
-Une fois le dossier *Canadien - CSA (Alt)* téléchargé à partir du repo, copier le tout simplement dans le dossier suivant :
+Une fois le dossier *Canadien - Alt* téléchargé à partir du repo, copier le tout simplement dans le dossier suivant :
 
 ```
 ~/Library/Keyboard Layouts
