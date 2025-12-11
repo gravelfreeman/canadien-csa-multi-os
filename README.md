@@ -1,6 +1,6 @@
-> Attention : dans ce guide, je fais souvent référence à la touche `ù Ù`, absente de Windows et Linux. Elle existe bien sur les claviers ISO, à gauche de `Shift`, mais ce guide est basé sur un clavier US, le plus répandu. Dans ce contexte, cette touche n’existe donc pas. Si vous utilisez un clavier ISO international, ce guide ne s’appliquera pas entièrement.
+> Attention : Ce guide s'addresse aux utilisateurs possédant un clavier *US* désirant utiliser le standard *Canadien CSA*, également connu sous le nom de *Canadien multilingue* sur *Windows* et *Canadien Intl.* sur Linux. Si vous utilisez un clavier *ISO (international)*, ce guide ne s’appliquera pas entièrement.
 
-<img width="2000" height="711" alt="image" src="https://github.com/user-attachments/assets/00ce1358-6a72-426c-bd1d-244e7545017e" />
+<img width="2000" height="822" alt="Canadien - CSA(4)" src="https://github.com/user-attachments/assets/5586e630-37e2-4766-bf7b-b4da62561c4c" />
 
 ***
 
@@ -19,33 +19,33 @@
 
 # Introduction
 
-Depuis des années je jongle entre Windows, macOS et Linux. Entre les partisans du Canadien-CSA (accents sans touche morte) et ceux qui préfèrent le Français Canada, rien n’est simple. Selon moi, Français Canada est un mauvais compromis : trop de touches manquantes, des caractères essentiels trop éloignés, et un décalage complet dès qu’on utilise un clavier Mac, où seule la sérigraphie CSA existe.
+Depuis des années je jongle entre Windows, macOS et Linux. Entre les partisans du Canadien - CSA (accents sans touche morte) et ceux qui préfèrent le clavier Français Canada, rien n’est simple. Selon moi, Français Canada est un mauvais compromis : trop de touches manquantes, des caractères essentiels trop éloignés, et un décalage complet dès qu’on utilise un clavier Mac, où seule la sérigraphie CSA existe.
 
 Jusqu’ici je survivais grâce à la mémoire musculaire. J’en ai eu assez : je voulais un moyen propre, cohérent et stable pour passer d’un OS à l’autre sans perdre mes repères. La documentation est rare. Je m’y attelle parce que personne ne semble vouloir le faire. Le sujet est complexe : pour un vrai résultat, il faut intervenir à la fois au niveau matériel et logiciel, ce qui rend difficile toute solution monétisable ou “officielle”.
 
 Voici donc ma méthode, assumée et perfectible. Adaptez-la à votre goût. Si vous suivez mon approche, vous aurez un clavier fonctionnel en français, en anglais et pour la programmation.
 
-> J’ai volontairement exclu les caractères avancés de rédaction et de science : Windows ne les gère pas nativement et leur présence surcharge inutilement un clavier dont on n’a pas besoin 99 % du temps.
-
 # 1. Hardware
 
 ## 1.1 Clavier mécanique
 
-J’utilise un **MCHOSE GX87 Ultra**, disponible chez [beaverkeys](https://beaverkeys.ca/products/mchose-gx87-ultra)
+Vous pouvez utiliser n'importe quel clavier US, peu importe son format. Suivez ce guide à la lettre, sauf pour la configuration dans YUZU : adaptez simplement la disposition aux spécificités de votre clavier si vous n’utilisez pas un modèle TKL.
 
-Boutique fiable, commandes multiples, envois rapides et service impeccable. Pour moi, c’est le meilleur rapport qualité-prix : la qualité est identique au clavier custom d’un ami qui lui a coûté près de 800 $. Donc non, ce n’est pas cher. Je suis du genre r/buyitforlife ce clavier est entièrement réparable et tiendra une vie.
+Pour ma part, j’utilise un clavier avec un layout **TKL**, le **MCHOSE GX87 Ultra**, disponible chez [beaverkeys](https://beaverkeys.ca/products/mchose-gx87-ultra)
 
-Il passe parfaitement de la programmation au gaming sans que j’aie à changer de setup. Je dois déjà alterner entre une MX Master et une G Pro en gaming, alors multiplier les périphériques serait infernal. J’aimais les claviers avec pavé numérique, mais en gaming ça gêne trop la souris. Depuis que je suis passé à un format compact, je ne reviendrais plus en arrière, c’est bien plus ergonomique et ça recentre naturellement la position de travail.
+Pour moi, c’est le meilleur rapport qualité-prix : la qualité est identique au clavier custom d’un ami qui lui a coûté près de 800 $. Ce n’est pas cher pour un clavier entièrement réparable et qui vous tiendra une vie.
+
+Il passe parfaitement de la programmation au gaming sans que j’aie à changer de setup. J’aimais les claviers avec pavé numérique, mais en gaming ça gêne trop la souris. C’est plus ergonomique et ça recentre naturellement la position de travail.
 
 ## 1.2 Touches Canadien-CSA
 
-J’ai créé un [template Canadien-CSA](https://yuzukeycaps.com/c/311360fd-f41f-43e8-b996-5f66f2d66d6a) avec **YUZU Custom Keycaps** pour 95 USD shipping inclus.
+J’ai créé un [template Canadien-CSA](https://yuzukeycaps.com/c/e71fa997-c839-47f1-8e26-ca5547bbc25a) avec **YUZU Custom Keycaps** pour 95 USD shipping inclus.
 
 C’est cher, mais normal pour du custom sans group buy.
 
 Pour y parvenir, j’ai comparé les layouts Windows, macOS et Linux — Canadien multilingue, Canadien-CSA et Canadien Intl. — afin d’identifier ce qui se recoupe et ce qui diverge. Le résultat implique forcément des compromis que j’explique ici.
 
-1. Sur Mac, la touche à gauche du 1 donne `ù Ù`. Elle n’existe pas sur Windows et Linux, qui utilisent plutôt `/ \ |`. Perdre cette touche me dérangeait, elle est trop utile en programmation. Je l’ai donc réaffectée à `/ \ |` via un profil personnalisé fourni dans le repo.
+1. Sur Mac lorsque l'on utilise un clavier US et non ISO (international), la touche `ù Ù` à droite de `Shift` (gauche) est rassigné à gauche de la touche `1` et devient `ù Ù` remplacant la touche `/ \ |`. Je l’ai donc réaffectée à `/ \ |` via un profil personnalisé **Canadien - Alt** fourni dans le repo.
 
 2. Sur Mac, la touche `Commande` est inversée avec la touche `Win`. C’est pourquoi les touches `Commande`|`Win` et `Option`|`Alt` ne se retrouvent pas sur la même touche à gauche de la barre d’espacement. Il serait impossible sur Mac de faire un Alt-Tab ou d’utiliser les raccourcis comme le presse-papier avec la touche `Alt` d’un clavier standard.
 
