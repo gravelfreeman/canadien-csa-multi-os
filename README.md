@@ -1,67 +1,79 @@
-> Attention : Ce guide s'addresse aux utilisateurs possédant un clavier *US* désirant utiliser le standard *Canadien CSA*, également connu sous le nom de *Canadien multilingue* sur *Windows* et *Canadien Intl.* sur Linux. Si vous utilisez un clavier *ISO (international)*, ce guide ne s’appliquera pas entièrement.
+> Attention : Ce guide s'addresse aux utilisateurs désirant configurer leur clavier suivant la norme [CAN/CSA Z243.200](https://fr.wikipedia.org/wiki/CAN/CSA_Z243.200) niveau A, également connu sous le nom de *Canadien - CSA* sur *macOS*, *Canadien multilingue* sur *Windows* et *Canadien Intl.* sur *Linux*.
 
 <img width="2000" height="822" alt="Canadien - CSA(4)" src="https://github.com/user-attachments/assets/5586e630-37e2-4766-bf7b-b4da62561c4c" />
 
 ***
 
-[Introduction](#introduction)  
-
-[1. Hardware](#1-hardware)  
-- [1.1 Clavier mécanique](#11-clavier-mécanique)  
-- [1.2 Touches Canadien-CSA](#12-touches-canadien-csa)  
-
-[2. Software](software)  
-- [2.1 Configuration du clavier](#21-configuration-du-clavier)  
-- [2.2 Canadien - Alt](#22-canadien---alt)  
-- [2.3 Mapping des touches](#23-mapping-des-touches)  
-
-[Conclusion](conclusion)
-
 # Introduction
 
-Depuis des années je jongle entre Windows, macOS et Linux. Entre les partisans du Canadien - CSA (accents sans touche morte) et ceux qui préfèrent le clavier Français Canada, rien n’est simple. Selon moi, Français Canada est un mauvais compromis : trop de touches manquantes, des caractères essentiels trop éloignés, et un décalage complet dès qu’on utilise un clavier Mac, où seule la sérigraphie CSA existe.
+Depuis des années je jongle entre Windows, macOS et Linux et j'ai créé un modèle de *Keycaps* universel s'adaptant d'un OS en utilisant le minimum de modification au niveau des différents système d'exploitation. Adaptez à votre goût selon vos besoins comme chacune des parties de ce guide son facultatives.
 
-Jusqu’ici je survivais grâce à la mémoire musculaire. J’en ai eu assez : je voulais un moyen propre, cohérent et stable pour passer d’un OS à l’autre sans perdre mes repères. La documentation est rare. Je m’y attelle parce que personne ne semble vouloir le faire. Le sujet est complexe : pour un vrai résultat, il faut intervenir à la fois au niveau matériel et logiciel, ce qui rend difficile toute solution monétisable ou “officielle”.
+Si vous suivez mon approche, vous aurez un clavier fonctionnel en français, en anglais et pour la programmation affichant les bons glyphes sur chacune des touches de votre clavier physique, respectant ainsi la norme [CAN/CSA Z243.200](https://fr.wikipedia.org/wiki/CAN/CSA_Z243.200) niveau A, populaire notamment sur les claviers de marque Apple.
 
-Voici donc ma méthode, assumée et perfectible. Adaptez-la à votre goût. Si vous suivez mon approche, vous aurez un clavier fonctionnel en français, en anglais et pour la programmation.
+[1. Modèle CAN/CSA Z243.200](#1-modèle-cancsa-z243200)  
+- [1.1 Sélection du format](#11-sélection-du-format)  
+- [1.2 Personnalisation](#12-personnalisation)
 
-# 1. Hardware
+[2. Configuration](#2-configuration)  
+- [2.1 Configuration du clavier](#21-configuration-du-clavier)  
+- [2.2 Configuration ANSI (É.-U.)](#22-configuration-ansi-é-u)
+- [2.3 Configuration macOS](#23-configuration-macos)
+- [2.3.1 Mapping de base](#231-mapping-de-base)
+- [2.3.2 Mapping avancé](#232-mapping-avancé)
 
-## 1.1 Clavier mécanique
+# Compatibilité
 
-Vous pouvez utiliser n'importe quel clavier US, peu importe son format. Suivez ce guide à la lettre, sauf pour la configuration dans YUZU : adaptez simplement la disposition aux spécificités de votre clavier si vous n’utilisez pas un modèle TKL.
+Ce guide est compatible avec les claviers *ANSI (É.-U.)* et *ISO (international)*.
 
-Pour ma part, j’utilise un clavier avec un layout **TKL**, le **MCHOSE GX87 Ultra**, disponible chez [beaverkeys](https://beaverkeys.ca/products/mchose-gx87-ultra)
+| Type | Formats | Touches |
+|------|---------|----------|
+| ANSI&nbsp;(É.-U.)<br>ISO&nbsp;(international) | Full Size, TKL, 75%, 65%, 60%, 40%, Ortho, Alice, Corne, Split 3×5, Lily 58, Sofle, 1800, Ergolite, HHKB | ISO Enter, Split Left Shift, Tsangan/WKL, Stepped Caps Lock, Split Backspace, Split Right Shift, F13, Split Numpad Plus, Split Numpad Enter, Split Numpad Zero, Split Spacebar, 4× R1, 6.25u Spacebar |
 
-Pour moi, c’est le meilleur rapport qualité-prix : la qualité est identique au clavier custom d’un ami qui lui a coûté près de 800 $. Ce n’est pas cher pour un clavier entièrement réparable et qui vous tiendra une vie.
+Ainsi que tout autre format ou touche personnalisée avec un minimum d’efforts.
 
-Il passe parfaitement de la programmation au gaming sans que j’aie à changer de setup. J’aimais les claviers avec pavé numérique, mais en gaming ça gêne trop la souris. C’est plus ergonomique et ça recentre naturellement la position de travail.
+# 1. Modèle CAN/CSA Z243.200
 
-## 1.2 Touches Canadien-CSA
+J’ai créé un modèle universel et personnalisable [CAN/CSA Z243.200](https://fr.wikipedia.org/wiki/CAN/CSA_Z243.200) niveau A, avec **YUZU Custom Keycaps**. Selon le format de votre clavier, et donc le nombre de touches, le coût devrait tourner autour de **$100 USD, expédition incluse**.
 
-J’ai créé un [template Canadien-CSA](https://yuzukeycaps.com/c/e71fa997-c839-47f1-8e26-ca5547bbc25a) avec **YUZU Custom Keycaps** pour 95 USD shipping inclus.
+Cette option peut paraître coûteuse si vous n’utilisez pas souvent votre clavier, et vous préférerez peut-être conserver vos touches actuelles ou fabriquer les vôtres. Dans tous les cas, n’hésitez pas à passer à l’étape suivante si les symboles imprimés sur les touches ne sont pas essentiels pour vous.
 
-C’est cher, mais normal pour du custom sans group buy.
+Lien vers le modèle : https://yuzukeycaps.com/c/e71fa997-c839-47f1-8e26-ca5547bbc25a
 
-Pour y parvenir, j’ai comparé les layouts Windows, macOS et Linux — Canadien multilingue, Canadien-CSA et Canadien Intl. — afin d’identifier ce qui se recoupe et ce qui diverge. Le résultat implique forcément des compromis que j’explique ici.
+> Note : Par souci de transparence, si vous achetez mon modèle ou passez par ce lien, je recevrai une petite commission, ce qui est grandement apprécié pour le temps investi.
 
-1. Sur Mac lorsque l'on utilise un clavier US et non ISO (international), la touche `ù Ù` à droite de `Shift` (gauche) est rassigné à gauche de la touche `1` et devient `ù Ù` remplacant la touche `/ \ |`. Je l’ai donc réaffectée à `/ \ |` via un profil personnalisé **Canadien - Alt** fourni dans le repo.
+## 1.1 Sélection du format
 
-2. Sur Mac, la touche `Commande` est inversée avec la touche `Win`. C’est pourquoi les touches `Commande`|`Win` et `Option`|`Alt` ne se retrouvent pas sur la même touche à gauche de la barre d’espacement. Il serait impossible sur Mac de faire un Alt-Tab ou d’utiliser les raccourcis comme le presse-papier avec la touche `Alt` d’un clavier standard.
+Sur la page d’édition, cliquez simplement sur *Rechercher* dans l’onglet *Paramètres*.
 
-<img width="485" height="56" alt="image" src="https://github.com/user-attachments/assets/26a3f6b6-29a5-4d1a-a42b-8696f84ddbc4" />
+<img width="404" height="227" alt="image" src="https://github.com/user-attachments/assets/369f97bd-671f-4ca5-8efe-70ab2fc6b97f" />
 
-3. Au contraire, à droite de la barre d’espacement, vous trouverez les combinaisons `Option + Alt` et `Commande + Win`.
+Vous pourrez alors choisir le format ainsi que votre modèle de clavier actuel, ou un équivalent.
 
-La raison est simple :
-* sur Windows, le layer 2 s’active avec `AltGr`
-* sur Mac, il s’active avec Option, située une touche plus à droite de `AltGr`
+## 1.2 Personnalisation
 
-Si je ne réorganisais pas ces touches, il faudrait utiliser un bouton différent pour accéder au layer 2 selon l’OS. Avec cette disposition, la même touche sert pour Windows, Linux et macOS, ce qui évite de casser la mémoire musculaire.
+Si vous le souhaitez, vous pouvez modifier les couleurs à votre convenance en ouvrant l’onglet *Couleurs* puis en sélectionnant celles que vous voulez changer.
 
-<img width="486" height="57" alt="image" src="https://github.com/user-attachments/assets/c866271f-35b7-4a7a-98dc-650204c0767c" />
+<img width="416" height="468" alt="image" src="https://github.com/user-attachments/assets/b1b2dcaf-0b7b-4908-bf09-20705df53e4f" />
 
-# 2. Software
+Si vous souhaitez conserver le code de couleur et uniquement ajuster les teintes, voici quelques informations utiles :
+
+GR2 : Couleur de `touche` principale et `icône`<br>
+GR5 : Couleur de `touche` secondaire<br>
+GR13 : Couleur de `caractère` principale et `caractère` secondaire (shift)<br>
+GN3 : Couleur de `caractère` tier (alt) et `échap`<br>
+GN28+GN27+GN26 : Dégradé de couleur pour `touche` tierce<br>
+
+***
+
+Vous pouvez également personnaliser la police d’écriture dans l’onglet *Légendes*. La police par défaut est **Nunito**.
+
+Voici un exemple avec des couleurs personnalisées :
+
+<img width="2034" height="892" alt="image" src="https://github.com/user-attachments/assets/0d819aa4-5cec-4aca-b4bc-0d845bc1f085" />
+<br>
+> Note : Vous pouvez bien sûr tout modifier comme bon vous semble à l’aide de cet outil, mais cela dépasse le cadre de ce guide.
+
+# 2. Configuration
 
 ## 2.1 Configuration du clavier
 
@@ -70,14 +82,19 @@ Configurer chaque OS avec les modèles de clavier suivants :
 | OS  | Clavier |
 | ------------- | ------------- |
 | Windows | Canadien multilingue standard  |
-| MacOS | Canadien - Alt |
+| MacOS | Canadien - CSA/Alt |
 | Linux | Canadien Intl. |
 
-## 2.2 Canadien - Alt
+## 2.2 Configuration ANSI (É.-U.)
 
-Tel qu'expliqué ci-haut, sur Mac, la touche à gauche du 1 donne `ù Ù`. Elle n’existe pas sur Windows et Linux, qui utilisent plutôt `/ \ |`. Je l’ai donc réaffectée à `/ \ |` via un profil alternatif appelé `Canadien - Alt` fourni dans le repo.
+> Si vous possédez un clavier de type *ISO (international)*, le contenu de cette section ne s’applique pas à vous.
 
-> Note: Igorez cette étape si vous désirez conserver la touche `ù Ù` sur Mac même si elle diffèrera de la touche Windows et Linux.
+Pour les utilisateurs d’un clavier de type `ANSI (É.-U.)`, vous constaterez que *macOS* réaffecte automatiquement la touche `ù Ù` à la place de la touche `/ \ |`, normalement située à gauche du `1`.
+Sur un clavier *ISO (international)*, la touche `ù` se trouve à droite de `Shift` (gauche).
+
+Par souci de cohérence avec *Windows* et *Linux* — sachant qu’il est possible de produire le caractère `ù` avec `Alt` + `^` + `u` — j’ai réaffecté la touche `/ \ |` à sa place d’origine au moyen d’un profil de clavier personnalisé **Canadien – Alt**, disponible dans le dépôt.
+
+> Note : Ignorez cette étape si vous désirez conserver la touche `ù Ù` sur *macOS* même si elle diffèrera sur *Windows* et *Linux*.
 
 Une fois le dossier *Canadien - Alt* téléchargé à partir du repo, copier le tout simplement dans le dossier suivant :
 
@@ -85,13 +102,48 @@ Une fois le dossier *Canadien - Alt* téléchargé à partir du repo, copier le 
 ~/Library/Keyboard Layouts
 ```
 
-Il devrait maintenant être disponible dans les paramêtres Claviers de votre Mac.
+Il devrait maintenant être disponible dans les paramêtres *Claviers* de votre Mac.
 
-## 2.3 Mapping des touches
+## 2.3 Configuration macOS
 
-Tel qu'expliqué ci-haut sur Mac, la touche `Commande` est inversée avec la touche `Win`. Il serait impossible sur Mac de faire un Alt-Tab ou d’utiliser les raccourcis comme le presse-papier avec la touche `Alt` d’un clavier standard. Nous allons remapper ces touches afin que cela fonctionne.
+Sur *macOS*, la touche `Commande` est inversée avec la touche `Win`. C’est pourquoi les touches `Commande`|`Win` et `Option`|`Alt` ne se trouvent pas sur la même touche.
 
-Pour ce faire, je n’utilise pas l’option native de macOS, car elle ne permet pas de modifier uniquement les touches situées à gauche de la barre d’espacement (voir Hardware/Touches Canadien-CSA plus haut). Il faut donc passer par le Terminal et appliquer la réaffectation manuellement. Une application comme Karabiner peut faire l’équivalent, mais je trouve que c’est trop d'overhead pour deux simples remappages. Je préfère une solution plus propre et minimale.
+Cela correspond au remappage de base décrit en *2.3.1*.
+
+<img width="140" height="57" alt="image" src="https://github.com/user-attachments/assets/d18dbda6-7d88-4aac-b24c-3cf03c4b6cf8" />
+
+***
+
+À droite de la barre d’espacement, vous remarquerez toutefois une différence majeure entre macOS et Windows :
+
+* sous *Windows*, le niveau 3 s’active avec `AltGr`
+* sous *macOS*, il s’active avec `Option`, placée une touche plus à droite que `AltGr`
+
+Il faut donc utiliser une touche différente pour accéder au niveau 3 selon l’OS.
+
+Si vous souhaitez harmoniser cette disposition, privilégiez la méthode avancée décrite en *2.3.2*, afin qu’une seule et même touche active le niveau 3 sur *Windows*, *Linux* et *macOS*.
+
+D’ailleurs, le modèle personnalisé disponible sur *YUZU* inclut deux touches additionnelles, `Option + Alt` et `Commande + Win`, prévues précisément pour cet usage.
+
+<img width="486" height="57" alt="image" src="https://github.com/user-attachments/assets/c866271f-35b7-4a7a-98dc-650204c0767c" />
+
+***
+
+### 2.3.1 Mapping de base
+
+> Note : Ignorer si vous avez utilisé la méthode avancée de *2.3.2*.
+
+1. Ouvrir les réglages système et sous l'onglet `Clavier`, cliquez sur `Raccourcis clavier...`
+
+2. Dans la fenêtre qui vient de s'ouvrir, cliquez sur l'onglet `Combinaison de touches` et interchanger les touches `Commande` et `Option` :
+
+<img width="472" height="438" alt="image" src="https://github.com/user-attachments/assets/da1aae21-d640-452a-a8b1-c686e8dbc34e" />
+
+### 2.3.2 Mapping avancé
+
+> Note : Ignorer si vous avez utilisé la méthode avancée de *2.3.1*.
+
+Pour ce faire, je n’utilise pas l’option native de macOS, car elle ne permet pas de modifier uniquement les touches situées à gauche de la barre d’espacement. Il faut donc passer par le Terminal et appliquer la réaffectation manuellement. Une application comme Karabiner peut faire l’équivalent, mais je trouve que c’est trop d'overhead pour un simple remappage.
 
 1. Dans un terminal, créer le fichier `com.custom.hidutil.plist` avec cette commande :
 
@@ -125,12 +177,8 @@ sudo nano /Library/LaunchDaemons/com.custom.hidutil.plist
 sudo launchctl load /Library/LaunchDaemons/com.custom.hidutil.plist
 ```
 
-Facultatif, désinstaller au besoin :
+Désinstallation au besoin :
 
 ```
 hidutil property --set '{"UserKeyMapping":[]}'
 ```
-
-# Conclusion
-
-C’est la méthode la plus rapide que j’ai trouvée pour basculer avec un KVM. Elle évite d’avoir à passer du mode Mac au mode Windows sur le clavier, avec des mappings différents selon l’OS, ou à gérer plusieurs layers dans VIA. Sur le GX87, maintenir Fn + A après un switch KVM est beaucoup trop lent. Je voulais une configuration set and forget : quelque chose qui survive aux mises à jour système et qui ne dépende d’aucune application tierce. C’est léger, transparent et, une fois configuré, on n’y touche plus. J’espère que mon casse-tête servira à d’autres; si vous avez des suggestions, n’hésitez pas à ouvrir un issue sur le GitHub. Pour ajouter des modèles de claviers, vous pouvez faire une PR et je regarderai ça.
